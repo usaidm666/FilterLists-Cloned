@@ -1,5 +1,5 @@
 # init base
-FROM nginx:alpine as base
+FROM nginx:1.25.4-alpine3.18 as base
 LABEL org.opencontainers.image.description="filterlists.com | github.com/collinbarrett/filterlists | A React & TypeScript UI built with Ant Design."
 COPY server/conf.d /etc/nginx/conf.d
 
